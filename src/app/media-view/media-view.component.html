@@ -1,0 +1,16 @@
+<div class="container-media" id="media">
+    <ngb-carousel [wrap]="true" class="carousel">
+        @for (img of imgs; track $index) {
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper carousel-wrapper">
+                    <img [src]="img" alt="6thLa in game" class="carousel-img"/>
+                </div>
+            </ng-template>
+        }
+    </ngb-carousel>
+
+    <div class="container-video">
+        <iframe src="https://www.youtube.com/embed/GuDGy7kYpg8?si=aZE0mzGgwU5QsCeh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/g0kXG5v_WTM?si=Mhxe0BDzXhSCRYkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
