@@ -1,4 +1,4 @@
-<div class="container-media" id="media">
+<div class="container-simple" id="media">
     <ngb-carousel [wrap]="true" class="carousel">
         @for (img of imgs; track $index) {
             <ng-template ngbSlide>
@@ -9,7 +9,7 @@
         }
     </ngb-carousel>
 
-    <div class="container-video">
+    <div class="container-simple-full">
         <iframe src="https://www.youtube.com/embed/GuDGy7kYpg8?si=aZE0mzGgwU5QsCeh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/g0kXG5v_WTM?si=Mhxe0BDzXhSCRYkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>

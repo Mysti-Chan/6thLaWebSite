@@ -8,5 +8,6 @@ body {
 }
 
 /* Importing Bootstrap SCSS file. */
+@import "assets/theme/theme";
 @import 'bootstrap/scss/bootstrap';
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css');
