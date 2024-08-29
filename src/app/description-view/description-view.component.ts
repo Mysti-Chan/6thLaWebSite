@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { AnalyticsService } from '../services/analytics.service';
 
 @Component({
   selector: 'app-description-view',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
   templateUrl: './description-view.component.html',
   styleUrl: './description-view.component.scss'
 })
-export class DescriptionViewComponent {
+export class DescriptionViewComponent implements OnInit {
 
+  analyticsService = inject(AnalyticsService)
+
+  ngOnInit(): void {
+    this.analyticsService.trackEvent("website loaded")
+  }
 }
