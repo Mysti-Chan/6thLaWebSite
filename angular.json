@@ -34,7 +34,13 @@
               {
                 "glob": "**/*",
                 "input": "src/assets",
-                "output": "/assets"
+                "output": "/assets",
+				"ignore": ["base/*", "css/*", "js/*"]
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/base",
+                "output": "/"
               }
             ],
             "styles": [
